@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class VetClinica {
-    private final List<Animal> animals;
+    private List<Animal> animals;
 
 
     public VetClinica() {
@@ -29,8 +29,35 @@ public class VetClinica {
         return resultAnimals;
     }
 
+    public List<Animal> getSwimableAnimals() {
+        List<Animal> resultAnimals = new ArrayList<>();
+        for (Animal animal : animals) {
+            if (animal instanceof Swimable) {
+                resultAnimals.add(animal);
+            }
+        }
+        return resultAnimals;
+    }
 
+    public List<Animal> getRunableAnimals() {
+        List<Animal> resultAnimals = new ArrayList<>();
+        for (Animal animal : animals) {
+            if (animal instanceof Runable) {
+                resultAnimals.add(animal);
+            }
+        }
+        return resultAnimals;
+    }
 
+    public List<Animal> getSoundableAnimals() {
+        List<Animal> resultAnimals = new ArrayList<>();
+        for (Animal animal : animals) {
+            if (animal instanceof Soundable) {
+                resultAnimals.add(animal);
+            }
+        }
+        return resultAnimals;
+    }
 
     /*public List<flyable> getFlyingAnimals(){
         List<flyable> resultAnimals = new ArrayList<>();

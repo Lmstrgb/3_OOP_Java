@@ -10,7 +10,12 @@ public class Human {
 
     }
 
-//    public Human(String name, String mailOrFemail, Integer age) {
+    public String getName() {
+        return name;
+    }
+
+
+    //    public Human(String name, String mailOrFemail, Integer age) {
 //    }
 
 
