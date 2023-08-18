@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Sem_6_hw" target="20" />
+      <module name="Sem_6_hw.main" target="20" />
+      <module name="Sem_6_hw.test" target="20" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
